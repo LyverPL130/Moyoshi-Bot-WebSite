@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 0px 40px; /* Increase the vertical padding */
+    margin: 0;  /* Remove margin to make it stick to the edges */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%; /* 漸變起始位置 */
+    }
+    50% {
+        background-position: 100% 50%; /* 漸變中間位置 */
+    }
+    100% {
+        background-position: 0% 50%; /* 漸變結束位置 */
+    }
+}
+
+.navbar h1 span {
+    background: linear-gradient(to right, #00ff99, #0033cc); /* 漸變顏色 */
+    background-size: 200% 100%; /* 使背景顯示完整漸變 */
+    -webkit-background-clip: text; /* WebKit 瀏覽器的前綴屬性 */
+    background-clip: text; /* 標準屬性 */
+    -webkit-text-fill-color: transparent; /* 使文字顏色透明 */
+    animation: colorChange 5s ease infinite; /* 動畫設置 */
+    display: inline; /* 確保 `background-clip` 生效 */
+    text-shadow: 0 0 2px rgba(0, 255, 255, 0.253), 0 0 5px rgba(0, 255, 255, 0.13); /* 更柔和的發光效果 */
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.navbar h1 a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar h1 a:hover {
+    
+    transition: color 0.3s;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #00ff99;
+}
+.main-content {
+    text-align: center;
+    margin: 50px auto;
+}
+.main-content h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+.main-content p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+.container3 {
+    background-color: #222;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.container h2 {
+    color: #00ff99;
+}
+.container p {
+    color: #ddd;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+.main-content h1 {
+    font-size: 5em; 
+}
+h3 a {    
+    text-decoration: none;
+
+    list-style-type: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    color: #d0d0d0; /* 白色帶點灰 */
+    transition: color 0.3s ease; /* 平滑過渡 */
+}
+h3 a:hover {
+    text-decoration: underline;
+    color: #a0a0a0; /* 滑鼠懸停時的顏色，灰色更多 */
+}
+h3 a:visited {
+    color: #d0d0d0; /* 訪問後顏色保持不變 */
+}
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%; /* 漸變起始位置 */
+    }
+    50% {
+        background-position: 100% 50%; /* 漸變中間位置 */
+    }
+    100% {
+        background-position: 0% 50%; /* 漸變結束位置 */
+    }
+}
+
+.main-content h1 span,.main-content h2 span,h2 span {
+    background: linear-gradient(to right, #00ff99, #0033cc); /* 漸變顏色 */
+    background-size: 200% 100%; /* 使背景顯示完整漸變 */
+    -webkit-background-clip: text; /* WebKit 瀏覽器的前綴屬性 */
+    background-clip: text; /* 標準屬性 */
+    -webkit-text-fill-color: transparent; /* 使文字顏色透明 */
+    animation: colorChange 5s ease infinite; /* 動畫設置 */
+    display: inline; /* 確保 `background-clip` 生效 */
+    text-shadow: 0 0 4px rgba(0, 255, 255, 0.329), 0 0 10px rgba(0, 255, 255, 0.192); /* 更柔和的發光效果 */
+}
+.con {
+    display: flex;
+    min-width: 300px;
+    padding: 60px;
+    background: #363636;
+    border-radius: 10px;
+}
+.sidebar {
+    min-width: 310px;
+    margin-right: 20px; /* 適當的間距 */
+    background-color: #23272a;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a:focus {
+    background-color: #7289da;
+    padding-left: 20px;
+}
+
+.sidebar ul li ul {
+    padding-left: 20px;
+}
+
+.sidebar ul li ul li a {
+    padding-left: 20px;
+    background-color: #2c2f33;
+}
+
+.sidebar ul li ul li a:hover, .sidebar ul li ul li a:visited.sidebar ul li ul li a:focus {
+    background-color: #7289da;
+    padding-left: 30px;
+}
+
+.container {
+    background-color: #222;
+    min-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1, p {
+    margin: 0 0 20px;
+}
+
+
+.nav-item.active{
+    font-weight: bold;
+    background-color: #7289da; /* 或任何其他顏色來顯示選中狀態 */
+}

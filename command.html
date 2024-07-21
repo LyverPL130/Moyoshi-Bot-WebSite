@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyoshi Bot 官方網站--命令列表</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://cdn.discordapp.com/avatars/1230504709065015368/1b34996c087dfbcc288e208f5bb00415.png?size=1024" rel="icon" type="image/png">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1><a href="index.html"><span>Moyoshi Bot</span></a></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="command.html">指令列表</a></li>
+            <li><a href="function.html">功能</a></li>
+            <li><a href="https://moyoshibot.netlify.app/suppot">支持我們</a></li>
+            <li><a href="https://moyoshibot.netlify.app/about">關於我們</a></li>
+            <li><a href="information.html">相關資訊</a></li>
+            <li><a href="doc.html">文檔</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1><span>Moyoshi Bot</span>機器人的命令</h1>
+        <h2><span>探索機器人的所有命令，掌握全功能，引領向上!</span></h2>
+    </div>
+    <div class="container">
+        <h1>快速入門</h1>
+        <h2>用簡潔有力、排列整齊的入門指南來教您如何快速上手<span>Moyoshi Bot</span></h2>
+        <div class="section">
+            <div class="feature">
+                <div class="feature-title">經驗系統</div>
+                <div class="feature-description">提升用戶互動經驗值。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">音樂</div>
+                <div class="feature-description">播放您最喜愛的音樂。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">管理</div>
+                <div class="feature-description">輕鬆管理您的伺服器。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">客服 (待製作)</div>
+                <div class="feature-description">即將推出。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">金錢系統</div>
+                <div class="feature-description">虛擬貨幣管理。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">小遊戲</div>
+                <div class="feature-description">有趣的小遊戲讓您娛樂無限。</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const features = document.querySelectorAll('.feature');
+
+        function checkFeatures() {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            features.forEach(feature => {
+                const boxTop = feature.getBoundingClientRect().top;
+
+                if (boxTop < triggerBottom) {
+                    feature.classList.add('show');
+                } else {
+                    feature.classList.remove('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkFeatures);
+        checkFeatures(); // Initial check in case user starts on a scrolled page
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyoshi Bot 官方網站</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://cdn.discordapp.com/avatars/1230504709065015368/1b34996c087dfbcc288e208f5bb00415.png?size=1024" rel="icon" type="image/png">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1><a href="index.html"><span>Moyoshi Bot</span></a></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="command.html">指令列表</a></li>
+            <li><a href="function.html">功能</a></li>
+            <li><a href="https://moyoshibot.netlify.app/suppot">支持我們</a></li>
+            <li><a href="https://moyoshibot.netlify.app/about">關於我們</a></li>
+            <li><a href="information.html">相關資訊</a></li>
+            <li><a href="doc.html">文檔</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>探索<span>Moyoshi Bot</span>機器人</h1>
+        <h2>引領潮流的 Discord 機器人技術</h2>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <div class="feature">
+                <div class="feature-title">經驗系統</div>
+                <div class="feature-description">提升用戶互動經驗值。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">音樂</div>
+                <div class="feature-description">播放您最喜愛的音樂。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">管理</div>
+                <div class="feature-description">輕鬆管理您的伺服器。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">客服 (待製作)</div>
+                <div class="feature-description">即將推出。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">金錢系統</div>
+                <div class="feature-description">虛擬貨幣管理。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">小遊戲</div>
+                <div class="feature-description">有趣的小遊戲讓您娛樂無限。</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">全部指令</div>
+                <div class="feature-description"><a href="command.html">點擊這裡查看所有指令</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const features = document.querySelectorAll('.feature');
+
+        function checkFeatures() {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            features.forEach(feature => {
+                const boxTop = feature.getBoundingClientRect().top;
+
+                if (boxTop < triggerBottom) {
+                    feature.classList.add('show');
+                } else {
+                    feature.classList.remove('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkFeatures);
+        checkFeatures(); // Initial check in case user starts on a scrolled page
+    </script>
+
+</div>
+<div class="container3">
+    <h2>支援我們</h2>
+    <h2>您的支持對我們非常重要。您可以通過捐款、反饋或分享來支持我們。</h2>
+    <h3><a href="https://moyoshibot.netlify.app/suppot">贊助鏈接</a></h3>
+</div>
+<div class="container2">
+    <div class="section">
+        <h2>聯絡我們</h2>
+        <h3><a href="https://discord.com/invite/Q9m9xv3Tc9">Discord官方群組/支援全組</a></h3>
+    </div>
+    <div class="section">
+        <h2>關於我們</h2>
+        <h3><a href="https://moyoshibot.netlify.app/teams">開發人員</a></h3>
+        <h3><a href="https://moyoshibot.netlify.app/teams">銘謝清單</a></h3>
+    </div>
+    <div class="section">
+        <h2>文檔</h2>
+        <h3><a href="https://moyoshibot.netlify.app/PRIVACYPOLICY">隱私政策</a></h3>
+        <h3><a href="https://moyoshibot.netlify.app/tos">服務條款</a></h3>
+    </div>
+</div>
+<div class="footer">
+    © 2024 Moyoshi Bot. 保留所有權利。
+</div>
+</body>
+</html>
